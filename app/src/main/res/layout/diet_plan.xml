@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <Button
+        android:id="@+id/randbutton"
+        android:layout_width="264dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="633dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#ffc922"
+        android:text="WORKOUT PLANS"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/planspace"
+        android:layout_width="wrap_content"
+        android:layout_height="623dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="106dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white" />
+</RelativeLayout>

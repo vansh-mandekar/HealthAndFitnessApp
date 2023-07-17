@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp"
+    tools:context=".ResultActivity">
+
+
+
+    <TextView
+        android:id="@+id/bmiTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#ffc922"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="404dp"
+        android:layout_below="@id/bmiTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="271dp"
+        android:padding="16dp">
+
+        <TableRow android:gravity="center">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="#ffc922"
+                android:background="@color/black"
+                android:padding="8dp"
+                android:text="CATEGORY"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="BMI RANGE - kg/m2"
+                android:textColor="#ffc922"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Severe Thinness"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Less than 16" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Moderate Thinness" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="16 - 17" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Mild Thinness" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="17 - 18.5" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Normal" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="18.5 - 25" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Overweight" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="25 - 30" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Obese Class I" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="30 - 35" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Obese Class II" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="35 - 40" />
+        </TableRow>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="Obese Class III" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:text="More than 40" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/additionalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="235dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffc922"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="143dp"
+        android:backgroundTint="#ffc922"
+        android:text="DIET PLAN"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
